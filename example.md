@@ -2,84 +2,41 @@
 theme: ./
 ---
 
-# OQTOPUS Platform
+# Welcome to OQTOPUS Theme Tutorial
 
-## Open Quantum Toolchain for Operators & Users
+## Learn how to use this Slidev theme
 
-Advanced quantum computing infrastructure for enterprise and research applications
+This presentation serves as a tutorial to showcase the features and custom components available in the OQTOPUS Slidev theme.
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer oqtopus-highlight" flex="~ justify-center items-center gap-2">
-    Get Started <div class="i-carbon:arrow-right inline-block"/>
+    Start Tutorial <div class="i-carbon:arrow-right inline-block"/>
   </span>
 </div>
 
 ---
-layout: agenda
+layout: default
 ---
 
-# Today's Agenda
+# Default Layout
 
-## OQTOPUS Platform Overview
+## Your Standard Content Slide
 
-- Platform Introduction & Core Features
-- Quantum Computing Infrastructure
-- API Integration & Developer Tools
-- Performance Metrics & Analytics
-- Implementation Roadmap
-- Q&A Session
+This is the most common layout for your presentation content. It includes a header, a sub-header, and a main content area.
+
+- Use markdown for lists
+- **Bold** and *italic* text are supported
+- You can easily embed images and other elements
 
 ---
 layout: section
 ---
 
-# Platform Overview
+# Section Layout
 
-## Transforming Quantum Computing Access
+## For Major Transitions or Chapter Breaks
 
----
-
-# OQTOPUS Features
-
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div class="oqtopus-card">
-
-## 🚀 **High Performance**
-- Ultra-low latency quantum operations
-- Scalable infrastructure
-- Real-time monitoring
-
-</div>
-
-<div class="oqtopus-card">
-
-## 🔧 **Developer Friendly**
-- RESTful API design
-- Comprehensive SDK
-- Interactive documentation
-
-</div>
-
-<div class="oqtopus-card">
-
-## 🔒 **Enterprise Security**
-- End-to-end encryption
-- Role-based access control
-- Compliance ready
-
-</div>
-
-<div class="oqtopus-card">
-
-## 📊 **Analytics Dashboard**
-- Real-time metrics
-- Performance insights
-- Custom reporting
-
-</div>
-
-</div>
+This layout is designed for impactful section titles or breaks in your presentation. It features a large, centered title and subtitle.
 
 ---
 layout: two-cols
@@ -87,167 +44,250 @@ layout: two-cols
 
 ::left::
 
-# Technical Architecture
+# Two-Column Layout
 
-## Core Components
+## Divide Your Content
 
-- **Quantum Processor Interface**
-  - Multi-vendor support
-  - Adaptive scheduling
-  - Error correction
+This layout is perfect for comparing two ideas, showing code alongside output, or presenting information side-by-side.
 
-- **Cloud Infrastructure**
-  - Auto-scaling capabilities
-  - Global deployment
-  - 99.9% uptime SLA
-
-- **Security Layer**
-  - Quantum-safe encryption
-  - Zero-trust architecture
-  - Audit logging
+- Content for the left column
+- Use `::left::` and `::right::`
+- Markdown works as usual
 
 ::right::
 
-<QuantumCircuit 
-  :qubits="['q0', 'q1', 'q2']" 
-  :gates="[
-    { id: 1, type: 'hadamard', label: 'H' },
-    { id: 2, type: 'cnot', label: '⊕' },
-    { id: 3, type: 'pauli-z', label: 'Z' }
-  ]"
->
-  <template #title>Example: Bell State Preparation</template>
-</QuantumCircuit>
+# Right Column
 
-<div class="oqtopus-highlight mt-4">
-🎯 **Optimization Goal**: Achieve 99.5% gate fidelity across all quantum operations
-</div>
+## More Content Here
+
+You can place any content in the right column, including text, images, or even other components.
+
+- Content for the right column
+- Keep it concise
+- Visuals are great here
+
+---
+layout: agenda
+---
+
+# Agenda Layout
+
+## Outline Your Presentation Flow
+
+This layout is ideal for presenting a clear agenda or table of contents for your talk.
+
+- Introduction to the Theme
+- Exploring Layouts
+- Custom Components Showcase
+- Theme Styling & Utilities
+- Q&A and Resources
+
+---
+layout: cover
+---
+
+# Cover Layout
+
+## For Your Presentation Title Page
+
+This layout is designed for the very first slide of your presentation, featuring a prominent title and subtitle.
+
+---
+layout: thanks
+---
+
+# Thank You Layout
+
+## Conclude Your Presentation
+
+This layout provides a professional and clean way to end your presentation, offering space for contact information or a final message.
 
 ---
 
-# Performance Metrics
+# Custom Components
+
+## Enhance Your Slides with Pre-built Elements
+
+This theme provides several custom Vue components to enrich your presentations.
 
 <div class="grid grid-cols-3 gap-6 mt-8">
 
 <MetricsCard trend="15%" trend-direction="up">
-  <template #icon>⚡</template>
-  <template #title>Throughput</template>
-  <template #value>1.2M</template>
-  <template #subtitle>Operations/second</template>
+  <template #icon>📈</template>
+  <template #title>Metric 1</template>
+  <template #value>123</template>
+  <template #subtitle>Units/day</template>
 </MetricsCard>
 
 <MetricsCard trend="8ms" trend-direction="down">
-  <template #icon>⏱️</template>
-  <template #title>Latency</template>
-  <template #value>12ms</template>
-  <template #subtitle>Average response time</template>
+  <template #icon>📉</template>
+  <template #title>Metric 2</template>
+  <template #value>45.6</template>
+  <template #subtitle>Avg. Value</template>
 </MetricsCard>
 
 <MetricsCard trend="99.8%" trend-direction="stable">
-  <template #icon>✅</template>
-  <template #title>Uptime</template>
-  <template #value>99.9%</template>
-  <template #subtitle>System availability</template>
+  <template #icon>📊</template>
+  <template #title>Metric 3</template>
+  <template #value>789</template>
+  <template #subtitle>Total Count</template>
 </MetricsCard>
 
 </div>
 
 ---
 
-# Data Analytics Dashboard
+# Data Chart Component
 
-<DataChart 
-  title="Quantum Operations Performance"
+## Visualize Your Data Easily
+
+Use the `<DataChart>` component to display various types of charts.
+
+<DataChart
+  title="Sample Data Trends"
   :data="[
-    { label: 'Jan', value: 850 },
-    { label: 'Feb', value: 1200 },
-    { label: 'Mar', value: 980 },
-    { label: 'Apr', value: 1450 },
-    { label: 'May', value: 1680 },
-    { label: 'Jun', value: 1920 }
+    { label: 'Item A', value: 50 },
+    { label: 'Item B', value: 75 },
+    { label: 'Item C', value: 60 },
+    { label: 'Item D', value: 90 }
   ]"
-  type="line"
+  type="bar"
 />
 
-<div class="oqtopus-badge mt-4">📈 +127% growth in quantum operations this quarter</div>
+<div class="oqtopus-badge mt-4"> Try changing 'type' to 'line' or 'pie'!</div>
 
 ---
 
-# Implementation Timeline
+# Timeline Component
 
-<Timeline 
-  title="OQTOPUS Development Roadmap"
+## Illustrate Processes or Roadmaps
+
+The `<Timeline>` component helps you present sequential events or project phases clearly.
+
+<Timeline
+  title="Project Phases Example"
   :items="[
     {
-      date: '2024 Q1',
-      title: 'Alpha Release',
-      description: 'Core platform with basic quantum operations',
+      date: 'Start',
+      title: 'Phase 1: Planning',
+      description: 'Define scope and objectives.',
       status: 'completed',
       active: false,
-      icon: '🚀'
+      icon: '📝'
     },
     {
-      date: '2024 Q2',
-      title: 'Beta Launch',
-      description: 'Enhanced API features and developer tools',
-      status: 'completed',
-      active: false,
-      icon: '⚡'
-    },
-    {
-      date: '2024 Q3',
-      title: 'Enterprise Edition',
-      description: 'Advanced security and compliance features',
+      date: 'Mid',
+      title: 'Phase 2: Development',
+      description: 'Build core features.',
       status: 'in-progress',
       active: true,
-      icon: '🏢'
+      icon: '💻'
     },
     {
-      date: '2024 Q4',
-      title: 'Global Rollout',
-      description: 'Worldwide deployment and scaling',
+      date: 'End',
+      title: 'Phase 3: Deployment',
+      description: 'Release to production.',
       status: 'pending',
       active: false,
-      icon: '🌍'
+      icon: '🚀'
     }
   ]"
 />
 
 ---
 
-# Code Integration Example
+# Quantum Circuit Component
 
-Modern API design for quantum computing:
+## Display Quantum Circuits
 
-```python
-from oqtopus import QuantumClient
+For quantum computing related presentations, use the `<QuantumCircuit>` component.
 
-# Initialize client
-client = QuantumClient(api_key="your_api_key")
+<QuantumCircuit
+  :qubits="['q0', 'q1']"
+  :gates="[
+    { id: 1, type: 'hadamard', label: 'H' },
+    { id: 2, type: 'cnot', label: 'CNOT' }
+  ]"
+>
+  <template #title>Simple Bell State Circuit</template>
+</QuantumCircuit>
 
-# Create quantum circuit
-circuit = client.create_circuit()
-circuit.add_gate("H", qubit=0)  # Hadamard gate
-circuit.add_gate("CNOT", control=0, target=1)
-
-# Execute on quantum processor
-result = client.execute(circuit, shots=1000)
-print(f"Results: {result.counts}")
-```
-
-<div class="oqtopus-highlight">
-🔥 **Developer Experience**: Simple, intuitive API with powerful quantum operations
+<div class="oqtopus-highlight mt-4">
+  **Note**: This is a visual representation, not a functional simulator.
 </div>
 
 ---
-layout: thanks
+
+# Theme Styling & Utilities
+
+## Leverage Custom Classes
+
+This theme provides specific utility classes for consistent styling.
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div class="oqtopus-card">
+
+##  **oqtopus-card**
+- A styled container for content
+- Features border, shadow, and padding
+
+</div>
+
+<div class="oqtopus-highlight">
+
+##  **oqtopus-highlight**
+- For important call-outs or buttons
+- Gradient background and rounded corners
+
+</div>
+
+<div class="oqtopus-badge">
+
+##  **oqtopus-badge**
+- Small, informative labels
+- Distinctive background and text color
+
+</div>
+
+</div>
+
 ---
 
-# Thank You
+# Code Blocks
 
-## Questions & Discussion
+## Showcase Your Code
 
-Let's explore the future of quantum computing together
+Easily embed and highlight code snippets in your slides.
+
+```python
+# Python example
+def hello_world():
+    print("Hello, OQTOPUS Theme!")
+
+hello_world()
+```
+
+```js
+// JavaScript example
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet('Slidev User');
+```
+
+---
+
+# Thank You for Completing the Tutorial!
+
+## Explore More & Contribute
+
+We hope this tutorial helped you understand the OQTOPUS Slidev theme.
+
+- **Read the Docs:** Check the theme's `README.md` for more details.
+- **Experiment:** Try creating your own slides with these features.
+- **Contribute:** Found a bug or have an idea? Your contributions are welcome!
 
 ---
 
@@ -257,21 +297,17 @@ Let's explore the future of quantum computing together
 
 <div class="oqtopus-card">
 
-## 📚 **Documentation**
-- API Reference
-- Getting Started Guide
-- Best Practices
-- [docs.oqtopus.com](https://docs.oqtopus.com)
+##  **Slidev Documentation**
+- Learn more about Slidev itself
+- [slidev.org](https://slidev.org/)
 
 </div>
 
 <div class="oqtopus-card">
 
-## 🤝 **Community**
-- Developer Forum
-- GitHub Repository  
-- Discord Channel
-- [community.oqtopus.com](https://community.oqtopus.com)
+##  **Theme Repository**
+- View source code and contribute
+- [GitHub Link Here (replace with actual)](https://github.com/orangekame3/slidev-theme-oqtopus)
 
 </div>
 
