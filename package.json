@@ -25,7 +25,8 @@
     "@slidev/types": "^52.0.0"
   },
   "devDependencies": {
-    "@slidev/cli": "^52.0.0"
+    "@slidev/cli": "^52.0.0",
+    "playwright-chromium": "^1.54.1"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
