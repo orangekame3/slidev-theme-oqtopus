@@ -203,13 +203,17 @@ The `<Timeline>` component helps you present sequential events or project phases
 For quantum computing related presentations, use the `<QuantumCircuit>` component.
 
 <QuantumCircuit
-  :qubits="['q0', 'q1']"
+  :qubits="['q0', 'q1', 'q2']"
   :gates="[
-    { id: 1, type: 'hadamard', label: 'H' },
-    { id: 2, type: 'cnot', label: 'CNOT' }
+    { id: 1, type: 'hadamard', label: 'H', qubit: 0, position: 1 },
+    { id: 2, type: 'cnot', control: 0, target: 1, position: 2 },
+    { id: 3, type: 'pauli-x', label: 'X', qubit: 2, position: 3 },
+    { id: 4, type: 'hadamard', label: 'H', qubit: 1, position: 4 },
+    { id: 5, type: 'cnot', control: 1, target: 0, position: 5 },
+    { id: 6, type: 'pauli-z', label: 'Z', qubit: 2, position: 6 }
   ]"
 >
-  <template #title>Simple Bell State Circuit</template>
+  <template #title>More Complex Quantum Circuit Example</template>
 </QuantumCircuit>
 
 <div class="oqtopus-highlight mt-4">
