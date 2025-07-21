@@ -217,7 +217,7 @@ For quantum computing related presentations, use the `<QuantumCircuit>` componen
 </QuantumCircuit>
 
 <div class="oqtopus-highlight mt-4">
-  **Note**: This is a visual representation, not a functional simulator.
+  <strong>Note</strong>: This is a visual representation, not a functional simulator.
 </div>
 
 ---

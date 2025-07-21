@@ -132,6 +132,14 @@
   font-size: 0.9rem;
 }
 
+.oqtopus-highlight strong {
+  font-weight: 800; /* さらに太くする */
+}
+
+.oqtopus-highlight h2 {
+  color: white; /* タイトルを白に戻す */
+}
+
 .oqtopus-card {
   background: white;
   border-radius: 0.75rem;
@@ -142,13 +150,17 @@
 }
 
 .oqtopus-badge {
-  background: var(--oqtopus-red);
+  background: var(--oqtopus-blue);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-weight: 600;
   font-size: 0.875rem;
   display: inline-block;
+}
+
+.oqtopus-badge h2 {
+  color: white; /* タイトルを白に戻す */
 }
 
 /* List styling */
