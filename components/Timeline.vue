@@ -91,7 +91,7 @@ const getStatusClass = (status) => {
 
 .timeline-header h3 {
   color: #1A202C;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
@@ -134,8 +134,8 @@ const getStatusClass = (status) => {
 }
 
 .timeline-dot {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background: white;
   border: 3px solid #E5E7EB;
@@ -143,7 +143,7 @@ const getStatusClass = (status) => {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #6B7280;
   position: relative;
   z-index: 2;
@@ -174,7 +174,7 @@ const getStatusClass = (status) => {
 
 .timeline-content {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.75rem;
   background: #F9FAFB;
   border: 1px solid #E5E7EB;
@@ -188,21 +188,21 @@ const getStatusClass = (status) => {
 }
 
 .timeline-date {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: #2B6CB0;
   margin-bottom: 0.5rem;
 }
 
 .timeline-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #1A202C;
   margin-bottom: 0.5rem;
 }
 
 .timeline-description {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #4B5563;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -210,9 +210,9 @@ const getStatusClass = (status) => {
 
 .timeline-status {
   display: inline-block;
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
