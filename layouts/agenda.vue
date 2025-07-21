@@ -1,7 +1,5 @@
 <template>
   <SlideLayout 
-    header-title="Agenda" 
-    header-subtitle="Meeting Outline"
     class="slidev-layout agenda"
   >
     <slot />
