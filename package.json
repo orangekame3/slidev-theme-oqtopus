@@ -29,11 +29,6 @@
     "playwright-chromium": "^1.54.1"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
-  "vite": {
-    "build": {
-      "assetsInlineLimit": 0
-    }
-  },
   "slidev": {
     "colorSchema": "both",
     "defaults": {
