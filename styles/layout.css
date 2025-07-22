@@ -1,3 +1,4 @@
+
 :root {
   /* OQTOPUS Brand Colors - based on logo */
   --oqtopus-red: #E53E3E; /* Primary red from logo */
@@ -57,7 +58,7 @@
   color: var(--slidev-theme-text);
   font-family: var(--slidev-font-family);
   line-height: 1.6;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 1.5rem;
   box-sizing: border-box;
   max-width: 100vw;
   max-height: 100vh;
